@@ -1,0 +1,21 @@
+<div class="content-box">
+    <h3>Papergrid</h3>
+    <div class="profile-status">
+        <span class="status-percent">116.67%</span> Profile Completion
+    </div>
+    <div class="nav-bar">
+        <a [routerLink]="['/home/screen/doc']" routerLinkActive="active-link" class="nav-item">Documents </a>
+        <a [routerLink]="['/home/screen/task']" routerLinkActive="active-link" class="nav-item">Tasks</a>
+        <a [routerLink]="['/home/screen/payments']" routerLinkActive="active-link" class="nav-item">Payments</a>
+        <a [routerLink]="['/home/screen/profile']" routerLinkActive="active-link" class="nav-item">Profile</a>
+        <a class="nav-item-left">
+            <select name="session" id="session" [(ngModel)]="selectedSession">
+                <option *ngFor="let session of sessions; let i = index" [ngValue]="session">{{sessions[i]}}</option>
+            </select>
+            <select name="month" id="month" [(ngModel)]="selectedMonth">
+                <option *ngFor="let month of months; let i = index" [ngValue]="month">{{months[i]}}</option>
+            </select>
+        </a>
+    </div>
+    <router-outlet></router-outlet>
+</div>

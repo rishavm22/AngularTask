@@ -1,0 +1,76 @@
+<div class="content-box">
+  <div class="row" style="width: 90vw;">
+    <div class="col-lg-3">
+      <h3>Clients</h3>
+    </div> 
+    <div class="col-lg-3 search-box">
+      <span class="input-group-append">
+        <button class="btn btn-outline-secondary search-btn" type="button">
+            <i class="fa fa-search"></i> Search using client name or client Id
+        </button>
+      </span>
+    </div> 
+    <div class="col-lg-2 add-client-box">
+      <button class="btn  add-client"> <i id="add-icon"class="fa fa-plus"></i> Add Client</button>
+    </div> 
+  </div>
+  
+    <div class="nav-bar">
+        <a [routerLink]="['/home/screen/doc']" routerLinkActive="active-link" class="nav-item">All </a>
+        <a class="nav-item-left">
+            <select name="session" id="session">
+                <option>All Members</option>
+            </select>
+        </a>
+    </div>
+    <div class="table-box">
+        <table class="table">
+            <thead>
+              <tr>
+                <th class="col-2 col-head">Client Id</th>
+                <th class="col-3 col-head">Company Name</th>
+                <th class="col-3 col-head">Creation Date</th>
+                <th class="col-3 col-head">Assigned Member</th>
+                <th class="col-1 col-head"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-data" *ngFor="let record of records; let in =index;" >
+                <td>{{record.clientID}}</td>
+                <td>{{companyNames[in]}}</td>
+                <td>{{record.createdAt | date}}</td>
+                <div  *ngIf="record.assignedMembers.length>0; else notAssigned">
+                  <td  *ngFor="let member of  Arr(record.assignedMembers.length).fill(1); let i =index;">
+                    <div>{{ record.assignedMembers[i].name }}</div>
+                  </td>
+                </div>
+                <ng-template #notAssigned>
+                  <td>    </td>
+                </ng-template>
+                
+                
+                <td>
+                  <div class="row">
+                    <div class="col-6 ">
+                      <img class="icon-box" src="../../../assets/images/user-blue.png" alt="clients" height="15px"/>
+                    </div>
+                    <div class="col-6">
+                      <img class="icon-box-2"src="../../../assets/images/ban-user.png" alt="clients" height="15px"/>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Mary</td>
+                <td>Moe</td>
+                <td>mary@example.com</td>
+              </tr>
+              <tr>
+                <td>July</td>
+                <td>Dooley</td>
+                <td>july@example.com</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+</div>

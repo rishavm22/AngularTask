@@ -1,0 +1,56 @@
+.nav-box {
+    background-color: rgb(54, 54, 204);
+    height: 98vh;
+}
+
+.white-text {
+    color: white;
+}
+
+.nav-brand {
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    margin: 3vh 0 10vh 0;
+}
+
+.nav-icon {
+    height: 3vh;
+    width: 1.5vw;
+}
+
+.nav-item-title {
+    margin: 2vh 0;
+    font-size: 0.9rem;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.nav-item-title:hover,:active  {
+    text-decoration: none;
+}
+
+.active-link-title:hover,:active {
+    text-decoration: none;
+}
+
+.active-link {
+    background-color:  aqua;
+    color:  aqua;
+    text-decoration: none;
+}
+
+.bottom-account {
+    text-align: center;
+    background-color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.bottom-nav-icon {
+    width: 20px;
+    height: 20px;
+    margin-top: 8px;
+    margin-left: 5px;
+}

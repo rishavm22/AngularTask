@@ -1,0 +1,15 @@
+<div class="row" width:100vh style="margin-top: 5vh;">
+    <div class="col-lg-3" style="width: 30vh;" >
+        <div [routerLink]="['all']" routerLinkActive="active-box" class="menu-box">ALL</div><br>
+        <div [routerLink]="['gst']"  routerLinkActive="active-box" class="menu-box">GST</div><br>
+        <div [routerLink]="['tds']"  routerLinkActive="active-box" class="menu-box">TDS</div><br>
+        <div [routerLink]="['tcs']"  routerLinkActive="active-box" class="menu-box">TCS</div><br>
+        <div [routerLink]="['esiPf']"  routerLinkActive="active-box" class="menu-box">ESI PF</div><br>
+        <div [routerLink]="['atax']"  routerLinkActive="active-box" class="menu-box">ADVANCE TAX</div><br>
+        <div [routerLink]="['itax']"  routerLinkActive="active-box" class="menu-box">INCOME TAX</div><br>
+    </div>
+    <div 
+        class="col-lg-9" >
+        <router-outlet ></router-outlet>        
+    </div>
+</div>

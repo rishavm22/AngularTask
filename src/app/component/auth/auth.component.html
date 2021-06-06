@@ -1,0 +1,78 @@
+<div class="container-fluid">
+    <div class="row" style="height: 95vh;">
+        <div class="col-lg-3 d-flex justify-content-center white-box">
+            <h4>HMA</h4>
+            <div class="auth-box">
+                Welcome Back!
+                <form class="form-class auth-form" #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+                    <div class="form-group">
+                        <input 
+                            type="email" 
+                            class="form-control" 
+                            id="email" 
+                            aria-describedby="emailHelp" 
+                            placeholder="Email Id"
+                            ngModel 
+                            name="email"
+                            required 
+                            email>
+                      </div>
+                      <div class="form-group">
+                        <div class="input-group" id="show_hide_password">
+                          <input 
+                                class="form-control" 
+                                [type]="!ishide ? 'text' : 'password'"
+                                placeholder="Password"
+                                ngModel 
+                                name="pass"
+                                required
+                                minlength="6">
+                          <div class="input-group-addon" *ngIf="ishide; else show " >
+                            <a (click)="showPass()"><i  class="fa fa-eye-slash fa-xs eye-icon"></i></a>
+                        </div>
+                        <ng-template #show>
+                          <a (click)="showPass()"><i  class="far fa-eye fa-xs eye-icon" aria-hidden="true"></i></a>
+                        </ng-template>
+                          
+                        </div>
+                      </div>
+                      <!-- <div class="form-group pass-field">
+                        <input 
+                            type="password" 
+                            class="form-control" 
+                            id="password" 
+                            placeholder="Password"
+                            ngModel 
+                            name="pass"
+                            required
+                            minlength="6"><i id="eye-icon" class="far fa-eye fa-xs" id="togglePassword"></i>
+                      </div> -->
+                      <div class="form-group text-forg">
+                          <a href="">Forget Password?</a> 
+                      </div>
+                      <div class="form-btn d-flex justify-content-center login-btn-box">
+                          <button type="submit" class="btn btn-primary login-btn">Login</button>
+                      </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-lg-9" style="position: relative;">
+            <div class="icons-box">
+                <img class="icon-1" src="https://img.icons8.com/color/48/000000/clipboard.png" />
+                <img class="icon-2" src="https://img.icons8.com/color/48/000000/clipboard.png" />
+            </div>
+            <div class="right-box" style="position: relative;">
+                <div class="center-outer-cirlce">
+                    <div class="center-inner-circle">
+                        <img class="icon-center" src="https://img.icons8.com/color/48/000000/clipboard.png" />
+                    </div>
+                </div>
+                <div class="bottom-text">
+                    Powered by Kilobyte Technologies Pvt Ltd
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+</div>

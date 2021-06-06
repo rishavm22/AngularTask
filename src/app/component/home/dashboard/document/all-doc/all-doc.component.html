@@ -1,0 +1,50 @@
+<div *ngIf="metaData">
+    <div class="month">October</div>
+        <div 
+            class="row" 
+            style="margin-top: 5vh; width: 68vw;" 
+            *ngFor="let n of  Arr(metaData!.total_count/5).fill(1);">
+            <div class="col" *ngFor="let sn of  Arr(5).fill(1); let si = index;">
+                <!-- <div  *ngIf( records[si]!=null )>
+                </div> -->
+                <div *ngIf="records[si].folder[0]!=null else cardElse">
+                    <div class="card">
+                        <div class="do-img-box">
+                            <img src="{{records[si].folder[0].preview}}" alt="Upload" height=100% width=100%> 
+                        </div>
+                        <div class="container">
+                            <div class="title">{{records[si].docType}}</div>
+                            <div class="type">{{records[si].type}}</div>
+                            <div class="edit-box d-flex justify-content-center">
+                                <img class="edit-image" src="../../../../../assets/images/cloud-download.png" alt="Upload">
+                            </div>                       
+                            <div class="edit-box2 d-flex justify-content-center">
+                                <img class="edit-image" src="../../../../../assets/images/pen.png" alt="Upload">
+                            </div>                       
+                        </div>
+                    </div>
+                </div>
+                <ng-template #cardElse>
+                    <div class="card">
+                        <div class="icons-box">
+                            <div class="icon-image">
+                                <img src="../../../../../assets/images/cloud-computing.png" alt="Upload">
+                            </div>
+                            <div class="hint-text">Drag and drop your document here or</div>
+                        </div>
+                        <div class="container">
+                            <div class="title">{{records[si].docType}}</div>
+                            <div class="type">{{records[si].type}}</div>
+                            <div class="btn-box">
+                                <div class="d-flex justify-content-center">
+                                    <img class="btn-img" src="../../../../../assets/images/white-plus.png" alt="Upload" >
+                                    
+                                </div>
+                                <div style="color: white; font-size: 0.7rem; margin: 1px 8px;">Upload</div>
+                            </div>                       
+                        </div>
+                    </div>  
+                </ng-template>
+            </div>
+        </div>
+</div>

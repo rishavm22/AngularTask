@@ -1,0 +1,61 @@
+.content-box {
+    padding: 3vh 10vw 0 3vw;
+}
+
+.profile-status {
+    font-size: 0.9rem;
+    margin-top: -5px;
+    color: rgb(160, 160, 160);
+}
+/* .active-class{
+    color: aqua;
+} */
+
+.status-percent {
+    color: aqua;
+}
+
+.nav-bar {
+    height: 5vh;
+    width: 90vw;
+    margin-top: 4vh;
+}
+
+.nav-item {
+    color: rgb(170, 170, 170);
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-right: 3vw;
+}
+
+.nav-item:hover,:active {
+    text-decoration: none;
+}
+
+.active-link {
+    color: aqua;
+}
+
+.nav-item-left {
+    font-size: 0.9rem;
+    margin-left: 40vw;
+}
+
+
+
+#session {
+    border: none;
+    font-size: 0.9rem;
+    color: rgb(136, 136, 136);
+    margin-right: 2vw;
+}
+
+#month {
+    border: none;
+    font-size: 0.9rem;
+    color: rgb(136, 136, 136);
+}
+
+/* .nav-item:last-child {
+    
+} */

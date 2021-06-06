@@ -1,0 +1,127 @@
+.card {
+    /* Add shadows to create the "card" effect */
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5%;
+    transition: 0.3s;
+    width: 11.5vw; 
+    height: 22vh;
+    background-color: rgb(243, 243, 243);
+  }
+
+.icons-box {
+  position: absolute;
+  margin: 3vh 10%;
+}
+
+.do-img-box {
+  position: absolute;
+}
+
+.icon-image{
+  width: 10px;
+  height: 10px;
+  margin-left: 40%;
+}
+
+.hint-text {
+  color: rgb(158, 158, 158);
+  font-size: 00.7rem;
+  width: 9vw;
+  text-align: center;
+  display: -webkit-box;
+  max-width: 100%;
+  margin: 15px 0;
+  -webkit-line-clamp: 2;
+  /* autoprefixer: off */
+  -webkit-box-orient: vertical;
+  /* autoprefixer: on */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    position: relative;
+    z-index: 100;
+    height: 100%;
+    padding: 2px 10px;
+    border-radius: 4%;
+    border-right: 10px solid transparent;
+    background-color: white;
+    clip-path: polygon(0 65%, 100% 50%, 100% 100%, 0 100%);
+  }
+  
+.title {
+  width: 7vw;
+  display: -webkit-box;
+  max-width: 100%;
+  margin: 0;
+  -webkit-line-clamp: 2;
+  /* autoprefixer: off */
+  -webkit-box-orient: vertical;
+  /* autoprefixer: on */
+  overflow: hidden;
+ text-overflow: ellipsis;
+  margin-top: 70%;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.type {
+  color: rgb(76, 178, 238);
+  font-size: 0.6rem;
+  font-weight: 400;
+}
+
+.btn-box {
+  position: absolute; 
+  border-radius: 5%;
+  top: 68%;
+  left: 75%;
+  width: 60px;
+  height: 45px;
+  background-color: rgb(51, 155, 115);
+}
+
+.edit-box {
+  padding: 2%;
+  position: absolute; 
+  top: 65%;
+  left: 70%;
+  width: 25px;
+  height: 25px;
+  background-color: rgb(233, 234, 252);
+}
+
+.edit-box2 {
+  padding: 2%;
+  position: absolute; 
+  top: 65%;
+  left: 88%;
+  width: 25px;
+  height: 25px;
+  background-color: rgb(243, 242, 242);
+}
+
+.edit-image {
+  height: 12px;
+  width: 12px;
+  margin-top: 20%;
+}
+
+.btn-icon {
+  width: 5px;
+  height: 5px;
+}
+
+.btn-img {
+  width: 10px;
+  height: 10px;
+  margin-top: 20%;
+}

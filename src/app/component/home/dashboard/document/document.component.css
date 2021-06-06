@@ -1,0 +1,28 @@
+.menu-item {
+    color: rgb(170, 170, 170) !important;
+    font-size: 1.2rem;
+}
+
+.menu-box {
+    padding: 3% 5%;
+    margin: -4% 0;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: rgb(145, 145, 145);
+    cursor: pointer;
+}
+.active-box {
+  background-color: rgb(223, 251, 253);
+  color: blue;
+  font-weight: 700;
+}
+
+.month{
+    color: rgb(148, 148, 148);
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+

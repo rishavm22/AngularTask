@@ -1,0 +1,101 @@
+.content-box {
+    padding: 3vh 15vw 0 5vw;
+}
+
+.search-box {
+    margin-left: 55vh;
+}
+
+.input-group-append {
+    height: 7vh;
+    margin-top: 1vh;
+}
+
+.search-btn {
+    height: 6vh;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: rgb(168, 168, 168);
+}
+
+.add-client-box {
+    margin-left: -2vw;
+
+}
+
+.add-client{
+ padding: 8% 12%;
+ background-color: #5cc59f;
+ border-radius: 10px;
+ color: white;
+ font-size: 0.9rem;
+ font-weight: 600;
+ letter-spacing: 1px;
+}
+
+#add-icon {
+    font-size: 0.5rem;
+}
+
+.nav-bar {
+    height: 5vh;
+    width: 90vw;
+    margin-top: 4vh;
+}
+
+.nav-item {
+    color: rgb(107, 107, 107);
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-right: 3vw;
+}
+
+.active-link {
+    color: aqua;
+}
+
+.nav-item-left {
+    margin-left: 65vw;
+}
+
+#session {
+    border: none;
+    font-size: 0.8rem;
+    color: rgb(88, 88, 88);
+    margin-right: 2vw;
+}
+
+.table-box {
+    margin-top: 5vh;
+}
+
+.col-head {
+    color: rgb(121, 121, 121);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.table-data {
+    color: rgb(3, 138, 248);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.icon-box {
+    padding: 55%;
+    width: 35px;
+    height: 35px;
+    margin-right: 1px;
+    border: none;
+    background-color: rgb(245, 245, 245);
+}
+
+.icon-box-2 {
+    padding: 55%;
+    width: 35px;
+    height: 35px;
+    margin-right: 1px;
+    border: none;
+    background-color: rgb(238, 238, 238);
+}
